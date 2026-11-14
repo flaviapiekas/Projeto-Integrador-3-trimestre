@@ -1,0 +1,198 @@
+
+/* CONFIGURAÇÕES GERAIS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #07182E;
+    color: #EAF3FF;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.7;
+}
+
+
+/* CABEÇALHO */
+
+header {
+    text-align: center;
+    padding: 55px 20px 45px;
+    background-color: #0B2342;
+    border-bottom: 3px solid #2874B8;
+}
+
+header h1 {
+    font-size: 32px;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+}
+
+header h1 span {
+    display: block;
+    font-size: 19px;
+    color: #64B5F6;
+    margin-top: 8px;
+}
+
+.subtitulo {
+    margin-top: 15px;
+    font-size: 15px;
+    color: #B7D5F0;
+}
+
+
+/* ÁREA PRINCIPAL */
+
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+
+/* SEÇÕES DE CONTEÚDO */
+
+.conteudo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+
+    background-color: #0B2342;
+
+    margin-bottom: 35px;
+    padding: 30px;
+
+    border-radius: 12px;
+    border: 1px solid #24527D;
+
+    transition: 0.3s;
+}
+
+.conteudo:hover {
+    border-color: #4DA8F0;
+    transform: translateY(-3px);
+}
+
+
+/* INVERSÃO DOS LADOS */
+
+.invertido {
+    flex-direction: row;
+}
+
+
+/* TEXTOS */
+
+.texto {
+    flex: 1;
+}
+
+.texto h2 {
+    color: #64B5F6;
+    font-size: 23px;
+    margin-bottom: 18px;
+
+    border-bottom: 2px solid #2874B8;
+    padding-bottom: 10px;
+}
+
+.texto p {
+    font-size: 16px;
+    color: #DCE8F5;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.texto strong {
+    color: #75C4FF;
+    font-size: 17px;
+}
+
+
+/* IMAGENS E GIFS */
+
+.imagem {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagem img {
+    width: 100%;
+    max-width: 480px;
+    height: 300px;
+
+    object-fit: cover;
+
+    border-radius: 10px;
+    border: 2px solid #2874B8;
+}
+
+
+/* RODAPÉ */
+
+footer {
+    text-align: center;
+    background-color: #0B2342;
+    border-top: 3px solid #2874B8;
+
+    padding: 25px;
+    margin-top: 50px;
+}
+
+footer p {
+    color: #FFFFFF;
+    font-size: 15px;
+}
+
+.rodape {
+    color: #64B5F6;
+    margin-top: 5px;
+}
+
+
+/* RESPONSIVIDADE PARA CELULARES */
+
+@media (max-width: 768px) {
+
+    header h1 {
+        font-size: 25px;
+    }
+
+    header h1 span {
+        font-size: 16px;
+    }
+
+    main {
+        width: 94%;
+    }
+
+    .conteudo,
+    .invertido {
+        flex-direction: column;
+        padding: 20px;
+        gap: 25px;
+    }
+
+    .imagem {
+        width: 100%;
+    }
+
+    .imagem img {
+        height: 230px;
+    }
+
+    .texto h2 {
+        font-size: 21px;
+    }
+
+    .texto p {
+        font-size: 15px;
+    }
+
+}
